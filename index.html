@@ -4,10 +4,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--  My CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -45,7 +53,7 @@
     <section class="jumbotron text-center">
       <img src="img/keanu.jpg" alt="Keanu Lionel" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Keanu Lionel</h1>
-      <p class="lead">Coders | Hard Worker</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -65,10 +73,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum velit a tenetur neque, animi eum commodi ipsum rerum. Qui, facere.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis culpa nostrum libero. Impedit possimus nobis, unde fugiat repudiandae veniam quaerat alias pariatur dolore, nulla neque!</p>
           </div>
         </div>
@@ -93,7 +101,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="img/1.png" class="card-img-top img-thumbnail" alt="PHP" />
               <div class="card-body">
                 <p class="card-text">Marketing Website using PHP Laravel 6</p>
@@ -101,7 +109,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="img/2.png" class="card-img-top img-thumbnail" alt="Materialize" />
               <div class="card-body">
                 <p class="card-text">Company Profile Website using MaterializeCSS</p>
@@ -109,7 +117,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="img/3.png" class="card-img-top img-thumbnail" alt="TailwindCSS" />
               <div class="card-body">
                 <p class="card-text">Portfolio Website using TailwindCSS</p>
@@ -117,7 +125,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
               <img src="img/4.png" class="card-img-top img-thumbnail" alt="TailwindCSS" />
               <div class="card-body">
                 <p class="card-text">Navigation Bar</p>
@@ -125,7 +133,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
               <img src="img/5.png" class="card-img-top img-thumbnail" alt="TailwindCSS" />
               <div class="card-body">
                 <p class="card-text">Navigation Bar with some Animated GIF</p>
@@ -144,12 +152,77 @@
     </section>
     <!-- Projects End -->
 
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/1.jpg" alt="Gambar 1" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/2.jpg" alt="Gambar 2" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/3.jpg" alt="Gambar 3" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/4.jpg" alt="Gambar 4" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/5.jpg" alt="Gambar 5" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/6.jpg" alt="Gambar 6" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/7.jpg" alt="Gambar 7" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/8.jpg" alt="Gambar 8" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/9.jpg" alt="Gambar 9" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/10.jpg" alt="Gambar 10" class="img-fluid gallery-img">
+            </a>
+          </div>
+        </div>
+    </section>
+    <!-- Gallery End -->
+
+
+
     <!-- Contact -->
     <section id="contact">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>Contact Me</h2>
+            <h2 class="contactme"></h2>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -184,10 +257,46 @@
 
     <!-- Footer -->
     <footer class="bg-primary text-white text-center pb-5">
-      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a class="text-white fw-bold" href="https://github.com/KeanuLionel" target="_blank">Keanu Lionel</a></p>
+      <p data-aos="fade-up" data-aos-duration="200" data-aos-delay="0">Created with <i class="bi bi-heart-fill text-danger"></i> by <a class="text-white fw-bold" href="https://github.com/KeanuLionel" target="_blank">Keanu Lionel</a></p>
     </footer>
     <!-- Footer End -->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galleryImage = document.querySelectorAll('.gallery-img')
+
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos ='fade-down';
+        img.dataset.aosDuration = 1000;
+        img.dataset.aosDelay = i * 100;
+      })
+
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.contactme',{
+        duration: 2, delay: 1.5, text: 'Contact Me'
+      });
+      gsap.to('.lead', {
+        duration: 2, delay: 1.5, text: 'Coders | Hard Worker'
+      });
+      gsap.from('.jumbotron img', {
+        duration: 1, rotateY:180, opacity: 0, 
+      });
+      gsap.from('.navbar', {
+        duration: 1.5, y:'-100%', opacity: 0, ease: 'back'
+      });
+      gsap.from('.display-4', {
+        duration: 1, x:-50, opacity:0, delay: 0.5, ease: 'back'
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
